@@ -52,13 +52,7 @@ function App() {
             <span className="text-[#FFA500]">tu negocio.</span>
           </div>
 
-          {/* Subtítulo más cercano al título */}
-          <p className="text-gray-600 text-base sm:text-lg md:text-xl whitespace-pre-line px-8 md:px-8 max-w-2xl mx-auto mt-2 pb-6">
-            Transforma tu negocio con soluciones
-            de automatización de IA de vanguardia
-            que impulsan la eficiencia y la
-            innovación.
-          </p>
+ 
         </div>
       <div className="container mx-auto px-1 py-0.5 md:py-1 max-w-3xl flex-1 mt-0">
 
