@@ -58,50 +58,49 @@ function App() {
           <span className="text-[#FFA500]">negocio.</span>
         </div>
 
-
-      </div>
-      <div className="container mx-auto px-1 py-0.5 md:py-1 max-w-3xl flex-1 mt-0">
-
-        <div className="bg-white rounded-lg p-2 md:p-4 shadow-xl min-h-[200px] border border-[#0A2647]/10 font-sans">
-          {/* Reducir padding */}
-          <div className="flex flex-col h-full gap-3">
-            <div className="flex-1">
-              <div className="h-[6em] overflow-y-auto font-light"> {/* Limitar altura a 6 líneas */}
-                <p className="text-[#0A2647] text-sm sm:text-base whitespace-pre-line">
-                  {displayedText}
-                  {charIndex < sampleResponse.length && (
-                    <span className="inline-block w-2 h-4 bg-[#0A2647] animate-pulse ml-1">|</span>
-                  )}
-                </p>
+        <div className="container mx-auto px-1 py-0.5 md:py-1 max-w-3xl flex-1 mt-0">
+          <div className="bg-white rounded-lg p-2 md:p-4 shadow-xl min-h-[250px] md:min-h-[350px] lg:min-h-[400px] border border-[#0A2647]/10 font-sans">
+            <div className="flex flex-col h-full gap-3">
+              <div className="flex-1">
+                <div className="h-auto min-h-[6em] md:min-h-[8em] lg:min-h-[10em] max-h-[15em] overflow-y-auto font-light">
+                  {/* Alineación de izquierda a derecha */}
+                  <p className="text-[#0A2647] text-sm sm:text-base whitespace-pre-line text-left">
+                    {displayedText}
+                    {charIndex < sampleResponse.length && (
+                      <span className="inline-block w-2 h-4 bg-[#0A2647] animate-pulse ml-1">|</span>
+                    )}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
-                <div
-                  className="bg-[#0A2647] h-full rounded-full transition-all duration-300 ease-out"
-                  style={{ width: `${progress}%` }}
-                />
+              <div className="flex flex-col gap-2">
+                <div className="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+                  <div
+                    className="bg-[#0A2647] h-full rounded-full transition-all duration-300 ease-out"
+                    style={{ width: `${progress}%` }}
+                  />
+                </div>
+                <div className="flex justify-end mb-2">
+                  <button
+                    className="h-10 w-10 bg-[#FFA500] text-[#032B66] rounded-full hover:bg-[#FFD700] transition-colors flex items-center justify-center"
+                    onClick={() => { }}
+                  >
+                    <FiArrowUp size={18} />
+                  </button>
+                </div>
               </div>
-              <div className="flex justify-end mb-2"> {/* Reducir margen inferior */}
-                <button
-                  className="h-10 w-10 bg-[#FFA500] text-[#032B66] rounded-full hover:bg-[#FFD700] transition-colors flex items-center justify-center"
-                  onClick={() => { }}
-                >
-                  {/* Asegúrate de tener un icono de flecha hacia arriba */}
-                  <FiArrowUp size={18} />
-                </button>
-              </div>
-
             </div>
           </div>
-
         </div>
+
+
+
+
       </div>
 
       <footer className="text-center py-4 text-[#0A2647] text-sm sm:text-base">
         <p>&copy; AppsOwner 2022. Todos los derechos reservados.</p>
       </footer>
-    </div>
+    </div >
 
   )
 }
