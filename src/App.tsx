@@ -47,7 +47,7 @@ function App() {
         </div>
 
 
-        <div className="font-sans text-[3vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-bold tracking-tight leading-tight mb-6 break-words w-full">
+        <div className="font-sans text-[6vw] sm:text-[5vw] md:text-[4vw] lg:text-[3vw] xl:text-[2vw] font-bold tracking-tight leading-tight mb-6 break-words w-full">
           <span className="text-black">Academia </span>
           <span className="text-[#032B66]">de Inteligencia Artificial</span><br />
           <span className="text-[#032B66]">para </span>
@@ -56,8 +56,8 @@ function App() {
           <span className="text-black">impulsar</span><br />
           <span className="text-[#032B66]">tu </span>
           <span className="text-[#FFA500]">negocio.</span>
-
         </div>
+
 
       </div>
       <div className="container mx-auto px-1 py-0.5 md:py-1 max-w-3xl flex-1 mt-0">
