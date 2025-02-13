@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  preview: {
+    allowedHosts: ['demochat.appsowner.com', 'academia-demochat.onrender.com']
+  }
+
 });
