@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react';
 import logo from './logo_t.png';
 import { Send } from 'lucide-react';
-@import '@fontsource/inter';
+import '@fontsource/inter';
 
 const sampleResponse = `La Inteligencia Artificial optimiza procesos, automatiza tareas y mejora la toma de decisiones, ayudando a las empresas a reducir costos 
 y aumentar la eficiencia. Las soluciones basadas en IA permiten enfocar recursos en la innovación, generando un impacto directo en la rentabilidad`;
