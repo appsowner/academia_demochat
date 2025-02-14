@@ -9,5 +9,30 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Widget Configuration -->
+    <script>
+      window.ChatWidgetConfig = {
+          webhook: {
+              url: 'https://n8n-prd.appsowner.com/webhook/f406671e-c954-4691-b39a-66c90aa2f103/chat',
+              route: 'general'
+          },
+          branding: {
+              logo: '/logo_t.png', // Asegúrate de poner la URL correcta de tu logo
+              name: 'Academia AppsOwner',
+              welcomeText: 'Hola 👋, como puedo ayudarte?',
+              responseTimeText: 'respondemos rapidamente'
+          },
+          style: {
+              primaryColor: '#FFA500',
+              secondaryColor: '#032B66',
+              position: 'right',
+              backgroundColor:  '#FFFFFF',
+              fontColor: '#111827',
+              titleColor: '#000000'
+          }
+      };
+    </script>
+    <script src="/chat.js"></script>
   </body>
 </html>
