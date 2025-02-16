@@ -2,7 +2,7 @@
 (function() {
     // Create and inject styles
     const styles = `
-        .n8n-chat-widget {
+        .n8n-chat-widget {fno
             --chat--color-primary: var(--n8n-chat-primary-color, #854fff);
             --chat--color-secondary: var(--n8n-chat-secondary-color, #6b3fd4);
             --chat--color-background: var(--n8n-chat-background-color, #ffffff);
@@ -296,8 +296,8 @@
             welcomeText: '',
             responseTimeText: '',
             poweredBy: {
-                text: 'Desarrollado por Nocodeveloper',
-                link: 'https://nocodeveloper.com'
+                text: 'AO AppsOwner',
+                link: 'https://www.appsowner.com'
             }
         },
         style: {
