@@ -9,28 +9,29 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Widget Configuration -->
+   <!-- Widget Configuration -->
     <script>
-    window.ChatWidgetConfig = {
-        webhook: {
-            url: 'https://n8n-prd.appsowner.com/webhook/b888dabc-4ca6-4564-9b5d-fc82a5c46a64/chat',
-            route: 'general'
-        },
-        branding: {
-            logo:  '/logo_t.png', // Asegúrate de poner la URL correcta de tu logo
-            name: 'AppsOwner', // Your company name
-            welcomeText: 'Hola 👋, como puedo ayudarte?', //Welcome message
-            responseTimeText: 'respondemos rapidamente' //Response time message
-        },
-        style: {
-           primaryColor: '#FFA500', //Primary color
-           secondaryColor: '#032B66',//Secondary color
-           position: 'right', //Position of the widget (left or right)
-           backgroundColor:  '#FFFFFF',//Background color of the chat widget
-           fontColor: '#111827',//Text color for messages and interface
-        }
-    };
-</script>
- <script src="/chat2.js"></script>
+      window.ChatWidgetConfig = {
+          webhook: {
+              url: 'https://n8n-prd.appsowner.com/webhook/b888dabc-4ca6-4564-9b5d-fc82a5c46a64/chat',
+              route: 'general'
+          },
+          branding: {
+              logo: '/logo_t.png', // Asegúrate de poner la URL correcta de tu logo
+              name: 'Academia AppsOwner',
+              welcomeText: 'Hola 👋, como puedo ayudarte?',
+              responseTimeText: 'respondemos rapidamente'
+          },
+          style: {
+              primaryColor: '#FFA500',
+              secondaryColor: '#032B66',
+              position: 'right',
+              backgroundColor:  '#FFFFFF',
+              fontColor: '#111827',
+              titleColor: '#000000'
+          }
+      };
+    </script>
+    <script src="/chat2.js"></script>
   </body>
 </html>
