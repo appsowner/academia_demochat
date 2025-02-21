@@ -10,23 +10,30 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   
-
+ <!-- Widget Configuration -->
     <script>
-        (function(d,t) {
-          var BASE_URL="https://chatwoot.appsowner.app/";
-          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=BASE_URL+"/packs/js/sdk.js";
-          g.defer = true;
-          g.async = true;
-          s.parentNode.insertBefore(g,s);
-          g.onload=function(){
-            window.chatwootSDK.run({
-              websiteToken: 'iS9xakgj9zzgXcTEpTsCigrf',
-              baseUrl: BASE_URL
-            })
+      window.ChatWidgetConfig = {
+          webhook: {
+              url: 'https://n8n-prd.appsowner.com/webhook/b888dabc-4ca6-4564-9b5d-fc82a5c46a64/chat',
+              route: 'general'
+          },
+          branding: {
+              logo: '/logo_t.png', // Asegúrate de poner la URL correcta de tu logo
+              name: 'Academia AppsOwner',
+              welcomeText: 'Hola 👋, como puedo ayudarte?',
+              responseTimeText: 'respondemos rapidamente'
+          },
+          style: {
+              primaryColor: '#FFA500',
+              secondaryColor: '#032B66',
+              position: 'right',
+              backgroundColor:  '#FFFFFF',
+              fontColor: '#111827',
+              titleColor: '#000000'
           }
-        })(document,"script");
-      </script>
+      };
+    </script>
+    <script src="/chat2.js"></script> 
       
   </body>
 </html>
